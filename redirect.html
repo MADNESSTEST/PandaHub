@@ -14,7 +14,8 @@
             .then(response => response.json())
             .then(data => {
                 const newRawUrl = data.files.hahaha.raw_url;
-                window.location.href = newRawUrl;
+                window.location.replace(newRawUrl); // Replace the current URL
+                history.replaceState(null, '', window.location.href); // Prevent going back
             })
             .catch(error => console.error('Error:', error));
         }

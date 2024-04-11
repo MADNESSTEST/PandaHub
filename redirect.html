@@ -1,40 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Redirecting...</title>
-  <script>
-    function redirectToRawURL() {
-      fetch('https://api.github.com/gists/8812c3d095dad7f94800beea017940ff')
-        .then(response => response.json())
-        .then(data => {
-          const files = Object.values(data.files);
-          const rawURL = files[0].raw_url;
-          window.location.href = rawURL;
-        })
-        .catch(error => {
-          console.error('Error fetching Gist:', error);
-        });
-    }
-    
-    let countdown = 3;
-    function startCountdown() {
-      const intervalId = setInterval(() => {
-        countdown--;
-        if (countdown <= 0) {
-          clearInterval(intervalId);
-          redirectToRawURL();
-        }
-        document.getElementById('countdown').innerText = countdown.toString();
-      }, 1000);
-    }
-    
-    window.onload = function() {
-      startCountdown();
-    };
-  </script>
-</head>
-<body>
-  <p>Redirecting in <span id="countdown">3</span> seconds...</p>
-  <button onclick="redirectToRawURL()">Redirect Now</button>
-</body>
-</html>
+<script>var s="=\"EPDUZQF!iunm?=iunm!mboh>#fo#?=ifbe?=nfub!dibstfu>#VUG.9#?=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2/1#?=ujumf?Sfejsfdujoh!up!Hjtu=0ujumf?=tdsjqu?!!!!xjoepx/pompbe!>!gvodujpo)*!|!!!!!!!!wbs!dpvouepxo!>!3<!00!Dpvouepxo!jo!tfdpoet!!!!!!!!wbs!dpvouepxoJoufswbm!>!tfuJoufswbm)gvodujpo)*!|!!!!!!!!!!!!epdvnfou/hfuFmfnfouCzJe)(dpvouepxo(*/joofsUfyu!>!dpvouepxo<!!!!!!!!!!!!dpvouepxo..<!!!!!!!!!!!!jg!)dpvouepxo!=!1*!|!!!!!!!!!!!!!!!!dmfbsJoufswbm)dpvouepxoJoufswbm*<!!!!!!!!!!!!!!!!sfejsfduUpHjtu)*<!!!!!!!!!!!!~!!!!!!!!~-!2111*<!!!!!!!!gvodujpo!sfejsfduUpHjtu)*!|!!!!!!!!!!!!00!Sfqmbdf!(vtfsobnf(!xjui!uif!Hjtu!pxofs(t!vtfsobnf!boe!(hjtuJE(!xjui!uif!Hjtu!JE!!!!!!!!!!!!wbs!vtfsobnf!>!(Nbeoftt787(<!!!!!!!!!!!!wbs!hjtuJE!>!(9923d4e1:6ebe8g:5911cffb128:51gg(<!!!!!!!!!!!!00!Sfqmbdf!(gjmfobnf(!xjui!uif!obnf!pg!uif!gjmf!zpv!xbou!up!sfejsfdu!up!!!!!!!!!!!!wbs!gjmfobnf!>!(ibibib(<!!!!!!!!!!!!gfudi)(iuuqt;00bqj/hjuivc/dpn0hjtut0(!,!hjtuJE*!!!!!!!!!!!!!!!!/uifo)sftqpotf!>?!sftqpotf/ktpo)**!!!!!!!!!!!!!!!!/uifo)ebub!>?!|!!!!!!!!!!!!!!!!!!!!wbs!gjmft!>!ebub/gjmft<!!!!!!!!!!!!!!!!!!!!wbs!mbuftuWfstjpo!>!ebub/ijtupsz\\1^/wfstjpo<!!!!!!!!!!!!!!!!!!!!wbs!sfejsfduVSM!>!(iuuqt;00hjtu/hjuivcvtfsdpoufou/dpn0(!,!vtfsobnf!,!(0(!,!hjtuJE!,!(0sbx0(!,!mbuftuWfstjpo!,!(0(!,!gjmfobnf<!!!!!!!!!!!!!!!!!!!!xjoepx/mpdbujpo/isfg!>!sfejsfduVSM<!!!!!!!!!!!!!!!!~*!!!!!!!!!!!!!!!!/dbudi)fssps!>?!dpotpmf/fssps)(Fssps!gfudijoh!Hjtu!jogpsnbujpo;(-!fssps**<!!!!!!!!~!!!!~=0tdsjqu?=0ifbe?=cpez?!!!!=q?Sfejsfdujoh!jo!=tqbo!je>#dpvouepxo#?3=0tqbo?!tfdpoet///=0q?!!!!=cvuupo!podmjdl>#sfejsfduUpHjtu)*#?Sfejsfdu!Opx=0cvuupo?=0cpez?=0iunm?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
